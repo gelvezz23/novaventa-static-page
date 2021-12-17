@@ -274,9 +274,26 @@ footer p {
   color: #707070;
 }
 
-/*@media (max-width: 1200px) {
-  .icon-azul-linea img {
-    width: 100%;
-    margin: 10px 140px;
+@media (max-width: 800px) {
+  .tu-tienda-virtual {
+    margin-top: 30px;
   }
-}*/
+  .icon-azul-linea {
+    display: none;
+  }
+  .caja-parrafo-uno {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .parrafo-quinto {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .parrafo-sexto {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}

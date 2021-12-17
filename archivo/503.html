@@ -10,7 +10,316 @@
       href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
     />
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      body {
+        /*max-width: 805px;*/
+      }
+      .bg-grey {
+        background-color: #efeeec;
+      }
+      .container-header {
+        background-color: white;
+      }
+      /* cambiar la fuente y ya*/
+      .logo-imagen-i {
+        /* width: 1366px;*/
+        height: 20%;
+        /* background: transparent url("img/Grupo 6586.png") 0% 0% no-repeat padding-box;
+ */
+        opacity: 1;
+        position: relative;
+        left: 0;
+        margin: 10px;
+        background-color: white;
+      }
+      .image-dic {
+        margin: 0;
+        width: 100%;
+      }
+      .fecha-dic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+      }
+      .fecha-dic img {
+        width: auto;
+        height: 66px;
+        margin: 40px 0 10px;
+      }
+      .parrafo-uno {
+        margin: 10px;
+        color: #707070;
+        font-size: 20px;
+        text-align: center;
+      }
+      .parrafo-uno strong {
+        color: #3d3d3d;
+      }
+
+      .parrafo-dos {
+        margin: 30px 10px 0px 10px;
+        color: #1a0d94;
+        font-size: 28px;
+        font-weight: 900;
+        text-align: center;
+      }
+      .parrafo-tres {
+        margin: 0px 10px 0px 10px;
+        color: #1a0d94;
+        font-size: 24px;
+        font-weight: 200;
+        text-align: center;
+      }
+
+      .parrafo-cuatro {
+        margin: 0px 10px 0px 10px;
+        color: #1a0d94;
+        font-size: 24px;
+        font-weight: 200;
+        text-align: center;
+      }
+
+      .tu-tienda-virtual img {
+        width: 160px;
+        height: auto;
+        margin: 10px 0 25px;
+      }
+      .tu-tienda-virtual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -50px;
+        flex-direction: column;
+      }
+
+      .icon-azul-linea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px;
+        flex-direction: column;
+      }
+      .icon-azul-linea img {
+        width: 805px;
+        height: auto;
+        object-fit: cover;
+      }
+      .caja-parrafo-uno {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+      }
+      .parrafo-quinto {
+        font-weight: 500;
+        width: 400px;
+        color: #707070;
+        padding-right: 34px;
+        padding-left: 33px;
+      }
+      .parrafo-quinto strong {
+        color: #3d3d3d;
+      }
+      .parrafo-quinto a {
+        color: #1f96ab;
+        font-weight: 600;
+      }
+
+      .parrafo-sexto {
+        font-weight: 500;
+        width: 400px;
+        color: #707070;
+      }
+      .parrafo-sexto strong {
+        color: #3d3d3d;
+      }
+      .parrafo-sexto a {
+        color: #1f96ab;
+        font-weight: 600;
+      }
+
+      .parrafo-septimo {
+        margin: 20px 0px;
+        font-weight: 500;
+        color: #707070;
+      }
+      .parrafo-septimo a {
+        color: #3d3d3d;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .parramo-octavo {
+        font-weight: 500;
+        color: #707070;
+      }
+      .p-eva {
+        font-weight: 500;
+        color: #707070;
+      }
+      .p-eva strong {
+        color: #3d3d3d;
+      }
+
+      .que-no {
+        color: #3b3b3b;
+        font-weight: 600;
+      }
+      .boton-tienda-virtual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .boton-tienda-virtual button {
+        background-color: #1f96ab;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 40px;
+        display: flex;
+      }
+
+      .boton-pagar-factura {
+        background-color: #1f96ab;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 90px;
+        display: flex;
+      }
+      .icon-carrito {
+        width: auto;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .icon-power {
+        width: auto;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .separador {
+        width: 100%;
+        height: 10px;
+      }
+      .container-information {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .container-information div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        align-items: center;
+      }
+
+      .container-information div div {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+      }
+      .container-information div div img {
+        padding: 10px;
+      }
+      .ilustracion-eva {
+        width: 380px;
+        margin-top: 70px;
+        height: auto;
+        object-fit: cover;
+        padding: 10px;
+      }
+      .container-queHacer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        text-align: center;
+        width: 200px;
+        height: 300px;
+
+        margin: 10px;
+        justify-content: center;
+      }
+      .barra-azul {
+        background: #1f96ab;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+        padding: 20px;
+      }
+      .barra-azul p {
+        padding: 10px;
+      }
+      .barra-azul a {
+        color: white;
+        font-weight: 600;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      footer p {
+        font-weight: 500;
+        color: #707070;
+      }
+
+      @media (max-width: 800px) {
+        .tu-tienda-virtual {
+          margin-top: 30px;
+        }
+        .icon-azul-linea {
+          display: none;
+        }
+        .caja-parrafo-uno {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 0px 10px;
+        }
+        .parrafo-quinto {
+          width: 100%;
+          margin: 10px 0px;
+        }
+        .parrafo-sexto {
+          width: 100%;
+          margin: 10px 0px;
+        }
+        .container-information {
+          flex-direction: column;
+        }
+        .container-information div div {
+          width: 100%;
+        }
+        .ilustracion-eva {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <section class="container">
@@ -18,7 +327,7 @@
         <img
           id="logo-imagen-i"
           class="logo-imagen-i"
-          src="./assets/logo-novaventa.svg"
+          src="./logo-novaventa.png"
           alt="logo novaventa i"
         />
       </header>
@@ -26,12 +335,12 @@
       <img
         id="image-dic"
         class="image-dic"
-        src="./assets/cabezote-ppal-diciembre.png"
+        src="./cabezote-ppal-diciembre.png"
         alt="imagen diciembre"
       />
 
       <div class="fecha-dic bg-grey">
-        <img id="fecha-dic" src="./assets/Grupo 3719.svg" alt="fecha dic" />
+        <img id="fecha-dic" src="./Grupo 3719.png" alt="fecha dic" />
         <p class="parrafo-uno">
           <strong>Este 20 y 21 de diciembre de 2021</strong> tu OFICINA VIRTUAL
           estará en mantenimiento.
@@ -50,7 +359,7 @@
       <div class="tu-tienda-virtual">
         <img
           id="tu-tienda-virtual"
-          src="./assets/Grupo 6590.svg"
+          src="./Grupo 6590.png"
           alt="tu tienda virutal"
         />
       </div>
@@ -63,7 +372,7 @@
         <img
           id="icon-azul-linea"
           class="icon-azul-linea"
-          src="./assets/Grupo 6603.svg"
+          src="./Grupo 6603.png"
           alt="icon 6603 azul linea"
         />
       </div>
@@ -85,7 +394,7 @@
           <img
             id="icon-carrito"
             class="icon-carrito"
-            src="./assets/Grupo 6597.svg"
+            src="./Grupo 6597.png"
             alt="icon 6597 carrito"
           />
           Comprar en mi Tienda Virtual
@@ -111,7 +420,7 @@
           <img
             id="icon-power"
             class="icon-power"
-            src="./assets/Icon material-power-settings-new.svg"
+            src="./Icon material-power-settings-new.png"
             alt="icon power"
           />
           Comprar en mi Tienda Virtual
@@ -121,7 +430,7 @@
         <img
           id="separador"
           class="separador"
-          src="./assets/separador.svg"
+          src="./separador.png"
           alt="separador"
         />
       </div>
@@ -131,7 +440,7 @@
             <img
               id="icon-eva"
               class="icon-eva"
-              src="./assets/icono-eva.svg"
+              src="./icono-eva.png"
               alt="icon eva"
             />
             <p class="p-eva">
@@ -146,7 +455,7 @@
             <img
               id="icon-tiempo-entrega"
               class="icon-tiempo-entrega"
-              src="./assets/icono-tiempo-entrega.svg"
+              src="./icono-tiempo-entrega.png"
               alt="icon tiempo entrega"
             />
             <p class="p-eva">
@@ -162,7 +471,7 @@
             <img
               id="icon-realizar-pagos"
               class="icon-realizar-pagos"
-              src="./assets/icono-realizar-pagos.svg"
+              src="./icono-realizar-pagos.png"
               alt="icon realizar pagos"
             />
             <p class="p-eva">
@@ -180,7 +489,7 @@
           <img
             id="ilustracion-eva"
             class="ilustracion-eva"
-            src="./assets/ilustracion-eva.png"
+            src="./ilustracion-eva.png"
             alt="ilustracion eva"
           />
         </div>
@@ -190,7 +499,7 @@
         <img
           id="separador"
           class="separador"
-          src="./assets/separador.svg"
+          src="./separador.png"
           alt="separador"
         />
       </div>
@@ -204,7 +513,7 @@
             <img
               id="icon-2-pc"
               class="icon-2-pc"
-              src="./assets/icono2.svg"
+              src="./icono2.png"
               alt="icon 2 pc"
             />
             <p class="que-no">
@@ -217,7 +526,7 @@
             <img
               id="icon-3-asteriscos"
               class="icon-3-asteriscos"
-              src="./assets/icono3.svg"
+              src="./icono3.png"
               alt="icon3 asteriscos"
             />
             <p class="que-no">No puedes activar o restablecer tu contraseña.</p>
@@ -227,7 +536,7 @@
             <img
               id="icon-1-box"
               class="icon-1-box"
-              src="./assets/icono1.svg"
+              src="./icono1.png"
               alt="icon 1 box"
             />
             <p class="que-no">
@@ -237,12 +546,7 @@
           </div>
 
           <div class="card">
-            <img
-              id="icon-4"
-              class="icon-4"
-              src="./assets/icono4.svg"
-              alt="icon 4"
-            />
+            <img id="icon-4" class="icon-4" src="./icono4.png" alt="icon 4" />
             <p class="que-no">
               Recuerda que tu OFICINA VIRTUAL estará disponible de nuevo el 23
               de diciembre para que continúes gestionando tu negocio a través de
@@ -256,7 +560,7 @@
         <img
           id="icon-manos"
           class="icon-manos"
-          src="./assets/icono-manos.svg"
+          src="./icono-manos.png"
           alt="icon manos"
         />
         <p>
@@ -272,7 +576,7 @@
         <img
           id="logos-nova-nutresa"
           class="logos-nova-nutresa"
-          src="./assets/logos-nova-nutresa.svg"
+          src="./logos-nova-nutresa.png"
           alt="logo nova nutresa"
         />
       </footer>
