@@ -134,6 +134,7 @@ body {
 }
 
 .parrafo-septimo {
+  margin: 20px 0px;
   font-weight: 500;
   color: #707070;
 }
@@ -146,7 +147,18 @@ body {
   font-weight: 500;
   color: #707070;
 }
+.p-eva {
+  font-weight: 500;
+  color: #707070;
+}
+.p-eva strong {
+  color: #3d3d3d;
+}
 
+.que-no {
+  color: #3b3b3b;
+  font-weight: 600;
+}
 .boton-tienda-virtual {
   display: flex;
   justify-content: center;
@@ -239,13 +251,27 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  font-weight: 500;
   padding: 20px;
 }
+.barra-azul p {
+  padding: 10px;
+}
+.barra-azul a {
+  color: white;
+  font-weight: 600;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+footer p {
+  font-weight: 500;
+  color: #707070;
 }
 
 /*@media (max-width: 1200px) {
