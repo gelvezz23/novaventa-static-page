@@ -1,7 +1,16 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "sans-serif";
+  font-family: sans-serif;
+}
+body {
+  /*max-width: 805px;*/
+}
+.bg-grey {
+  background-color: #efeeec;
+}
+.container-header {
+  background-color: white;
 }
 /* cambiar la fuente y ya*/
 .logo-imagen-i {
@@ -13,6 +22,7 @@
   position: relative;
   left: 0;
   margin: 10px;
+  background-color: white;
 }
 .image-dic {
   margin: 0;
@@ -31,34 +41,216 @@
   margin: 40px 0 10px;
 }
 .parrafo-uno {
-  margin: 0 0 40px;
+  margin: 10px;
+  color: #707070;
+  font-size: 20px;
+  text-align: center;
 }
+.parrafo-uno strong {
+  color: #3d3d3d;
+}
+
+.parrafo-dos {
+  margin: 30px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+.parrafo-tres {
+  margin: 0px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.parrafo-cuatro {
+  margin: 0px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
 .tu-tienda-virtual img {
   width: 160px;
   height: auto;
-  margin: 100px 0 25px;
+  margin: 10px 0 25px;
 }
 .tu-tienda-virtual {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: -50px;
   flex-direction: column;
 }
-.parrafo-cuatro {
-  margin: 0 0 10px;
-}
-.container-image-progress {
+
+.icon-azul-linea {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 140px;
+  padding: 5px 0px;
+  flex-direction: column;
 }
-.container-image-progress img {
-  width: 100%;
+.icon-azul-linea img {
+  width: 805px;
+  height: auto;
   object-fit: cover;
 }
-.container-parrafos-medios{
+.caja-parrafo-uno {
   display: flex;
-  
+  justify-content: center;
+  align-items: start;
+  width: 100%;
 }
+.parrafo-quinto {
+  font-weight: 500;
+  width: 400px;
+  color: #707070;
+  padding-right: 34px;
+  padding-left: 33px;
+}
+.parrafo-quinto strong {
+  color: #3d3d3d;
+}
+.parrafo-quinto a {
+  color: #1f96ab;
+  font-weight: 600;
+}
+
+.parrafo-sexto {
+  font-weight: 500;
+  width: 400px;
+  color: #707070;
+}
+.parrafo-sexto strong {
+  color: #3d3d3d;
+}
+.parrafo-sexto a {
+  color: #1f96ab;
+  font-weight: 600;
+}
+
+.parrafo-septimo {
+  font-weight: 500;
+  color: #707070;
+}
+.parrafo-septimo a {
+  color: #3d3d3d;
+  font-weight: 600;
+  text-decoration: none;
+}
+.parramo-octavo {
+  font-weight: 500;
+  color: #707070;
+}
+
+.boton-tienda-virtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.boton-tienda-virtual button {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  display: flex;
+}
+
+.boton-pagar-factura {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 90px;
+  display: flex;
+}
+.icon-carrito {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+.icon-power {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+.separador {
+  width: 100%;
+  height: 10px;
+}
+.container-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container-information div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  align-items: center;
+}
+
+.container-information div div {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.container-information div div img {
+  padding: 10px;
+}
+.ilustracion-eva {
+  width: 380px;
+  margin-top: 70px;
+  height: auto;
+  object-fit: cover;
+  padding: 10px;
+}
+.container-queHacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  width: 200px;
+  height: 300px;
+
+  margin: 10px;
+  justify-content: center;
+}
+.barra-azul {
+  background: #1f96ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/*@media (max-width: 1200px) {
+  .icon-azul-linea img {
+    width: 100%;
+    margin: 10px 140px;
+  }
+}*/
