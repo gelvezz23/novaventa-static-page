@@ -48,3 +48,17 @@
 .parrafo-cuatro {
   margin: 0 0 10px;
 }
+.container-image-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 140px;
+}
+.container-image-progress img {
+  width: 100%;
+  object-fit: cover;
+}
+.container-parrafos-medios{
+  display: flex;
+  
+}
