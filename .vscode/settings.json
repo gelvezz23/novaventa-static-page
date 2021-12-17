@@ -1,0 +1,25 @@
+{
+  "workbench.colorTheme": "Monokai",
+  "terminal.explorerKind": "external",
+  "workbench.iconTheme": "material-icon-theme",
+  "activitusbar.alignment": "Right",
+  "editor.renderControlCharacters": true,
+  "sonarlint.ls.javaHome": "c:\\Users\\carlos.gelvez\\.vscode\\extensions\\sonarsource.sonarlint_managed-jre\\jre\\jdk-11.0.10+9-jre",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontWeight": 500,
+  "editor.formatOnPaste": true,
+  "editor.fontSize": 16,
+  "editor.fontLigatures": null,
+  "editor.fontWeight": null,
+  "angular.experimental-ivy": true,
+  "workbench.activityBar.visible": true,
+  "window.zoomLevel": 0,
+  "files.autoSave": "afterDelay"
+}

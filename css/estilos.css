@@ -3,6 +3,12 @@
   padding: 0px;
   font-family: "sans-serif";
 }
+.container {
+  background-color: #efeeec;
+}
+.container-header {
+  background-color: white;
+}
 /* cambiar la fuente y ya*/
 .logo-imagen-i {
   /* width: 1366px;*/
@@ -13,6 +19,7 @@
   position: relative;
   left: 0;
   margin: 10px;
+  background-color: white;
 }
 .image-dic {
   margin: 0;
@@ -47,4 +54,53 @@
 }
 .parrafo-cuatro {
   margin: 0 0 10px;
+}
+.icon-azul-linea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.icon-azul-linea img {
+  width: 1000px;
+  margin: 15px 100px 20px 100px;
+}
+.caja-parrafo-uno {
+  display: flex;
+  width: 1200px;
+  margin: 0 0 30px;
+}
+.parrafo-quinto {
+  margin: 0 200px 0 180px;
+  width: 400px;
+}
+.parrafo-sexto {
+  margin: 0 0px 0 -70px;
+  width: 420px;
+}
+.boton-tienda-virtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-tienda-virtual button {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  display: flex;
+}
+.icon-carrito {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .icon-azul-linea img {
+    width: 500px;
+    margin: 15px 100px 20px 100px;
+  }
 }
