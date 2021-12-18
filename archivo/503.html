@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>novaventa pc</title>
+    <title>novaventa</title>
     <link
       rel="stylesheet"
       href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
+
     <style>
       * {
         margin: 0px;
         padding: 0px;
-        font-family: sans-serif;
+        font-family: "Roboto", sans-serif;
       }
       body {
         /*max-width: 805px;*/
@@ -66,7 +73,7 @@
       .parrafo-dos {
         margin: 30px 10px 0px 10px;
         color: #1a0d94;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: 900;
         text-align: center;
       }
@@ -181,8 +188,9 @@
         align-items: center;
         margin-top: 20px;
       }
-      .boton-tienda-virtual button {
+      .boton-tienda-virtual a {
         background-color: #1f96ab;
+        text-decoration: none;
         color: white;
         border: none;
         border-radius: 25px;
@@ -194,6 +202,7 @@
         background-color: #1f96ab;
         color: white;
         border: none;
+        text-decoration: none;
         border-radius: 25px;
         padding: 15px 90px;
         display: flex;
@@ -297,6 +306,7 @@
         .tu-tienda-virtual {
           margin-top: 30px;
         }
+
         .icon-azul-linea {
           display: none;
         }
@@ -306,7 +316,6 @@
           align-items: center;
           width: 100%;
           padding: 0px;
-          
         }
         .parrafo-quinto {
           width: 100%;
@@ -338,6 +347,9 @@
         .card {
           height: auto;
         }
+        .boton-pagar-factura {
+          padding: 15px 60px;
+        }
         footer {
           flex-direction: column;
         }
@@ -352,12 +364,14 @@
   <body>
     <section class="container">
       <header class="container-header">
-        <img
-          id="logo-imagen-i"
-          class="logo-imagen-i"
-          src="./logo-novaventa.png"
-          alt="logo novaventa i"
-        />
+        <a href="https://www.novaventa.com.co/" target="_blank">
+          <img
+            id="logo-imagen-i"
+            class="logo-imagen-i"
+            src="./logo-novaventa.png"
+            alt="logo novaventa i"
+          />
+        </a>
       </header>
 
       <img
@@ -409,16 +423,27 @@
           Puedes Autoconsumir a través de tu Tienda Virtual y aprovechar
           cualquier momento del Ciclo para hacer un pedido.
           <strong>Conoce cómo hacerlo haciendo</strong>
-          <a href="#" target="_blank">click aquí</a>
+          <a
+            href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-autoconsumo-mantenimiento-ov-c182021/index.html"
+            target="_blank"
+            >click aquí</a
+          >
         </p>
         <p class="parrafo-sexto">
           Con tu Tienda Virtual ganas Dinero y Puntos a través de los Bonos de
           Ganancias.<strong> Conoce cómo ganas haciendo</strong>
-          <a href="#" target="_blank">click aquí</a>
+          <a
+            href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-ganancia-mantenimiento-ov-c182021/index.html"
+            target="_blank"
+            >click aquí</a
+          >
         </p>
       </div>
       <div class="boton-tienda-virtual">
-        <button>
+        <a
+          href="https://tiendavirtual.novaventa.com.co/Consumidor/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118"
+          target="_blank"
+        >
           <img
             id="icon-carrito"
             class="icon-carrito"
@@ -426,12 +451,16 @@
             alt="icon 6597 carrito"
           />
           Comprar en mi Tienda Virtual
-        </button>
+        </a>
       </div>
       <div class="fecha-dic" style="margin-top: 10px">
         <p class="parrafo-septimo">
           Ingresa con tu mismo usuario y contraseña de tu
-          <a href="#" target="_blank">OFICINA VIRTUAL</a>
+          <a
+            href="https://tiendavirtual.novaventa.com.co/Consumidor/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118"
+            target="_blank"
+            >OFICINA VIRTUAL</a
+          >
         </p>
       </div>
       <div class="fecha-dic" style="margin-top: 30px">
@@ -444,7 +473,11 @@
         </p>
       </div>
       <div class="boton-tienda-virtual">
-        <button class="boton-activar-tienda">
+        <a
+          href="https://tiendavirtual.novaventa.com.co/Consumidor/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118"
+          target="_blank"
+          class="boton-activar-tienda"
+        >
           <img
             id="icon-power"
             class="icon-power"
@@ -452,7 +485,7 @@
             alt="icon power"
           />
           Comprar en mi Tienda Virtual
-        </button>
+        </a>
       </div>
       <div style="margin: 30px 0px">
         <img
@@ -517,7 +550,12 @@
           </div>
 
           <div>
-            <button class="boton-pagar-factura">Paga tu factura</button>
+            <a
+              href="https://www.zonapagos.com/t_novaventatesoreria/pagos.asp"
+              target="_blank"
+              class="boton-pagar-factura"
+              >Paga tu factura</a
+            >
           </div>
         </div>
 
@@ -599,20 +637,27 @@
         />
         <p>
           Agrandecemos tu comprensión durante este tiempo de mantenimiento.<br />
-          Te invitamos a <a href="#" target="_blank">contactanos</a> a través de
-          los medios que seguirán a tu disposiciín.
+          Te invitamos a
+          <a
+            href="https://portal-contenido-novaventa.uc.r.appspot.com/venta-directa/contactanos"
+            target="_blank"
+            >contactanos</a
+          >
+          a través de los medios que seguirán a tu disposiciín.
         </p>
       </section>
       <footer>
         <p>
           Copyright&#169; 2021 Novaventa S.A.S. Todos los derechos reservados.
         </p>
-        <img
-          id="logos-nova-nutresa"
-          class="logos-nova-nutresa"
-          src="./logos-nova-nutresa.png"
-          alt="logo nova nutresa"
-        />
+        <a href="https://www.novaventa.com.co/" target="_blank">
+          <img
+            id="logos-nova-nutresa"
+            class="logos-nova-nutresa"
+            src="./logos-nova-nutresa.png"
+            alt="logo nova nutresa"
+          />
+        </a>
       </footer>
     </section>
   </body>
