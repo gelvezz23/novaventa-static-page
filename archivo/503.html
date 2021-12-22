@@ -322,9 +322,14 @@
         display: none;
        
       }
+      .image-dic-mobile{
+          display: none;
+         
+        }
        
 
       @media (max-width: 800px) {
+       
         .tu-tienda-virtual {
           margin-top: 30px;
         }
@@ -391,10 +396,11 @@
         width: 400px;
         height: auto;
         
-      }
-      .bar-progress{
-        display: flex;
-      }
+        }
+        .bar-progress{
+          display: flex;
+        }
+     
       }
 
       @media (max-width: 600px) {
@@ -403,13 +409,23 @@
           height: 250px;
           margin: 0px 10px;
           }
-        }
+        
         .container-information div{
-          width: none;
+          width: 100%;
         }
         .separador{
           width: 200px;
           height: auto;
+        }
+         .image-dic{
+          display: none;
+        }
+        .image-dic-mobile{
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+         
         }
       }
     </style>
@@ -433,6 +449,14 @@
         src="/error/cabezote-ppal-diciembre.png"
         alt="imagen diciembre"
       />
+
+        <img
+        id="image-dic"
+        class="image-dic-mobile"
+        src="/error/cabeza-mobile.png"
+        alt="imagen diciembre mobile"
+      />
+      
 
       <div class="fecha-dic bg-grey">
         <img id="fecha-dic" src="/error/Grupo 3719.png" alt="fecha dic" />
