@@ -18,10 +18,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
 
     <style>
+      @font-face {
+        font-family: "ProximaNova";
+        font-style: normal;
+        font-weight: normal;
+        src: url("/error/fonts/ProximaNova.eot?") format("eot"),
+          url("/error/fonts/ProximaNova.woff") format("woff"),
+          url("/error/fonts/ProximaNova.ttf") format("truetype"),
+          url("/error/fonts/ProximaNova.svg#ProximaNova") format("svg");
+      }
+     
       * {
         margin: 0px;
         padding: 0px;
-        font-family: "Roboto", sans-serif;
+        font-family: "ProximaNova", "Roboto", sans-serif;
       }
       body {
         /*max-width: 805px;*/
@@ -31,6 +41,10 @@
       }
       .container-header {
         background-color: white;
+      }
+      .container{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 100%);
       }
       /* cambiar la fuente y ya*/
       .logo-imagen-i {
@@ -218,8 +232,9 @@
         margin-right: 8px;
       }
       .separador {
-        width: 100%;
-        height: 10px;
+        width: 800px;
+        height: auto;
+       
       }
       .container-information {
         display: flex;
@@ -259,8 +274,10 @@
       }
       .container-cards {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        width: 90%;
+
       }
       .card {
         text-align: center;
@@ -301,6 +318,11 @@
       .ilustracion-eva-up {
         display: none;
       }
+      .progress{
+        display: none;
+       
+      }
+       
 
       @media (max-width: 800px) {
         .tu-tienda-virtual {
@@ -358,6 +380,37 @@
           height: auto;
           margin-top: 20px;
         }
+        .icon-azul-linea {
+          display: none;
+        }
+        .progress{
+          display:block;
+          height: 160px;
+        }
+        .separador {
+        width: 400px;
+        height: auto;
+        
+      }
+      .bar-progress{
+        display: flex;
+      }
+      }
+
+      @media (max-width: 600px) {
+        .progress{
+          display: block;
+          height: 250px;
+          margin: 0px 10px;
+          }
+        }
+        .container-information div{
+          width: none;
+        }
+        .separador{
+          width: 200px;
+          height: auto;
+        }
       }
     </style>
   </head>
@@ -384,7 +437,7 @@
       <div class="fecha-dic bg-grey">
         <img id="fecha-dic" src="/error/Grupo 3719.png" alt="fecha dic" />
         <p class="parrafo-uno">
-          <strong>Este 20 y 21 de diciembre de 2021</strong> tu OFICINA VIRTUAL
+          <strong>Este 23 y 24 de diciembre de 2021</strong> tu OFICINA VIRTUAL
           estará en mantenimiento.
         </p>
 
@@ -410,6 +463,7 @@
           Haz pedidos a través de tu <strong> Tienda Virtual</strong>
         </h2>
       </div>
+      <div class="bar-progress">
       <div class="icon-azul-linea">
         <img
           id="icon-azul-linea"
@@ -417,7 +471,15 @@
           src="/error/Grupo 6603.png"
           alt="icon 6603 azul linea"
         />
+         
       </div>
+
+      <img
+          id="icon-azul-linea"
+          class="progress"
+          src="/error/progress.png"
+          alt="icon 6603 azul linea"
+        />
       <div class="caja-parrafo-uno">
         <p class="parrafo-quinto">
           Puedes Autoconsumir a través de tu Tienda Virtual y aprovechar
@@ -431,13 +493,14 @@
         </p>
         <p class="parrafo-sexto">
           Con tu Tienda Virtual ganas Dinero y Puntos a través de los Bonos de
-          Ganancias.<strong> Conoce cómo ganas haciendo</strong>
+          Ganancia.<strong> Conoce cómo ganas haciendo</strong>
           <a
             href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-ganancia-mantenimiento-ov-c182021/index.html"
             target="_blank"
             >click aquí</a
           >
         </p>
+      </div>
       </div>
       <div class="boton-tienda-virtual">
         <a
@@ -450,13 +513,13 @@
             src="/error/Grupo 6597.png"
             alt="icon 6597 carrito"
           />
-          Comprar en mi Tienda Virtual
-        </a>
+          Quiero activar mi Tienda Virtual.
       </div>
       <div class="fecha-dic" style="margin-top: 10px">
         <p class="parrafo-septimo">
           Ingresa con tu mismo usuario y contraseña de tu
           <a
+            style="font-style: italic"
             href="https://tiendavirtual.novaventa.com.co/Consumidor/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118"
             target="_blank"
             >OFICINA VIRTUAL</a
@@ -487,7 +550,11 @@
           Comprar en mi Tienda Virtual
         </a>
       </div>
-      <div style="margin: 30px 0px">
+      <div style="width: 100%;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
         <img
           id="separador"
           class="separador"
@@ -567,7 +634,11 @@
         />
       </section>
 
-      <div>
+      <div style="width: 100%;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
         <img
           id="separador"
           class="separador"
@@ -618,14 +689,9 @@
           </div>
 
           <div class="card">
-            <img
-              id="icon-4"
-              class="icon-4"
-              src="/error/icono4.png"
-              alt="icon 4"
-            />
+            <img id="icon-4" class="icon-4" src="/error/icono4.png" alt="icon 4" />
             <p class="que-no">
-              Recuerda que tu OFICINA VIRTUAL estará disponible de nuevo el 23
+              Recuerda que tu OFICINA VIRTUAL estará disponible de nuevo el 25
               de diciembre para que continúes gestionando tu negocio a través de
               ella.
             </p>
@@ -646,9 +712,9 @@
           <a
             href="https://portal-contenido-novaventa.uc.r.appspot.com/venta-directa/contactanos"
             target="_blank"
-            >contactanos</a
+            >contactarnos</a
           >
-          a través de los medios que seguirán a tu disposiciín.
+          a través de los medios que seguirán a tu disposición.
         </p>
       </section>
       <footer>
