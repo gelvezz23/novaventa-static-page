@@ -10,39 +10,576 @@
       href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
     />
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
-    <link rel="stylesheet" href="/error/css/estilos.css" />
-    <link rel="stylesheet" href="/error/libraries/fontawesome-free-5.14.0-web/css/all.min.css">
+    <style>
+      @font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/error/fonts/ProximaNova.eot?") format("eot"),
+    url("/error/fonts/ProximaNova.woff") format("woff"),
+    url("/error/fonts/ProximaNova.ttf") format("truetype"),
+    url("/error/fonts/ProximaNova.svg#ProximaNova") format("svg");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "ProximaNova", "Roboto", sans-serif;
+}
+body {
+  /*max-width: 805px;*/
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 238, 236, 1) 100%
+  );
+}
+.bg-grey {
+  background-color: #efeeec;
+}
+.container-header {
+  background-color: white;
+}
+/* cambiar la fuente y ya*/
+.logo-imagen-i {
+  /* width: 1366px;*/
+  height: 20%;
+  /* background: transparent url("img/Grupo 6586.png") 0% 0% no-repeat padding-box;
+ */
+  opacity: 1;
+  position: relative;
+  left: 0;
+  margin: 10px;
+  background-color: white;
+}
+.image-dic {
+  margin: 0;
+  margin-bottom: -5px;
+  width: 100%;
+}
+.fecha-dic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.fecha-dic img {
+  width: auto;
+  height: 66px;
+  margin: 40px 0 10px;
+}
+.parrafo-uno {
+  margin: 10px;
+  color: #707070;
+  font-size: 20px;
+  text-align: center;
+}
+.parrafo-uno strong {
+  color: #3d3d3d;
+}
+
+.parrafo-dos {
+  margin: 30px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+.parrafo-tres {
+  margin: 0px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.parrafo-cuatro {
+  margin: 0px 10px 0px 10px;
+  color: #1a0d94;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.tu-tienda-virtual img {
+  width: 160px;
+  height: auto;
+  margin: 10px 0 25px;
+}
+.tu-tienda-virtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -50px;
+  flex-direction: column;
+}
+
+.icon-azul-linea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  flex-direction: column;
+}
+.icon-azul-linea img {
+  width: 805px;
+  height: auto;
+  object-fit: cover;
+}
+
+.ilustracion-eva-up {
+  display: none;
+}
+.caja-parrafo-uno {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+.parrafo-quinto {
+  font-weight: 500;
+  width: 400px;
+  color: #707070;
+  padding-right: 34px;
+  padding-left: 33px;
+}
+.parrafo-quinto strong {
+  color: #3d3d3d;
+}
+.parrafo-quinto a {
+  color: #1f96ab;
+  font-weight: 600;
+}
+
+.parrafo-sexto {
+  font-weight: 500;
+  width: 400px;
+  color: #707070;
+}
+.parrafo-sexto strong {
+  color: #3d3d3d;
+}
+.parrafo-sexto a {
+  color: #1f96ab;
+  font-weight: 600;
+}
+
+.parrafo-septimo {
+  margin: 20px 0px;
+  font-weight: 500;
+  color: #707070;
+}
+.parrafo-septimo a {
+  color: #3d3d3d;
+  font-weight: 600;
+  text-decoration: none;
+}
+.parramo-octavo {
+  text-align: center;
+  font-weight: 500;
+  color: #707070;
+}
+.p-eva {
+  font-weight: 500;
+  color: #707070;
+}
+.p-eva strong {
+  color: #3d3d3d;
+}
+
+.que-no {
+  color: #3b3b3b;
+  font-weight: 600;
+}
+.boton-tienda-virtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.boton-tienda-virtual button {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  display: flex;
+}
+
+.boton-pagar-factura {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 90px;
+  display: flex;
+}
+.icon-carrito {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+.icon-power {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+.separador {
+  width: 100% !important;
+  height: 10px !important;
+}
+.container-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container-information div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  align-items: center;
+}
+
+.container-information div div {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+}
+.container-information div div img {
+  padding: 0px 16px 0px 10px;
+}
+.ilustracion-eva {
+  width: 380px !important;
+  margin-top: 70px !important;
+  height: auto !important;
+  object-fit: cover !important;
+  padding: 10px !important;
+}
+.container-queHacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -45px;
+}
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  width: 200px;
+  height: 300px;
+
+  margin: 0px 45px;
+  justify-content: center;
+}
+
+.card img {
+  width: 120px;
+  height: auto;
+}
+.barra-azul {
+  background: #1f96ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  padding: 20px;
+}
+.barra-azul p {
+  padding: 10px;
+}
+.barra-azul a {
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 238, 236, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer p {
+  font-weight: 500;
+  color: #707070;
+}
+.ilustracion-eva-up {
+  display: none;
+}
+.progress {
+  display: none;
+}
+.image-dic-mobile {
+  display: none;
+}
+.content-position {
+  margin-bottom: -88px;
+  position: relative;
+  z-index: 9999;
+}
+.haz-pedido-mobile,
+.aun-no-haz-mobile {
+  display: none;
+}
+
+.container-llamanos {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ciudad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ciudad div {
+  width: 50%;
+  margin: 1em;
+}
+
+.form-control {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 2;
+  color: #495057;
+  background: none;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 10px;
+  font-family: ProximaNova;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 2;
+}
+
+.container-llamanos .fa-circle-chevron-down {
+  position: absolute;
+  bottom: 3.5em;
+  margin: auto;
+  right: 53%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #1f96ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.contact_number {
+  text-align: center;
+  font-weight: 800;
+  color: #1f96ab;
+}
+
+@media (max-width: 800px) {
+  .content-position {
+    margin-bottom: 0px;
+  }
+  .tu-tienda-virtual {
+    margin-top: 30px;
+  }
+
+  .icon-azul-linea {
+    display: none;
+  }
+  .caja-parrafo-uno {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+  .parrafo-quinto {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+  }
+  .parrafo-sexto {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .container-information {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container-information div div {
+    width: 100%;
+  }
+  .ilustracion-eva {
+    display: none;
+  }
+  .ilustracion-eva-up {
+    width: auto;
+    height: 250px !important;
+    display: block;
+  }
+  .container-cards {
+    flex-direction: column;
+  }
+  .card {
+    height: auto;
+  }
+  .boton-pagar-factura {
+    padding: 15px 60px;
+  }
+  footer {
+    flex-direction: column;
+    flex-flow: wrap-reverse;
+  }
+  footer img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+  }
+  .icon-azul-linea {
+    display: none;
+  }
+  .progress {
+    display: block;
+    height: 160px;
+  }
+  .separador {
+    width: 400px;
+    height: auto;
+  }
+  .bar-progress {
+    display: flex;
+  }
+  .container-queHacer {
+    margin-bottom: 1px;
+  }
+  .haz-pedido-mobile,
+  .aun-no-haz-mobile {
+    display: block;
+  }
+
+  .aun-no-haz-desktop,
+  .haz-pedido-desktop {
+    display: none;
+  }
+
+  .ciudad {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .ciudad div {
+    width: 100%;
+    margin: 0px;
+  }
+  .container-llamanos .fa-circle-chevron-down {
+    bottom: 28%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 600px) {
+  .progress {
+    display: block;
+    height: 250px;
+    margin: 0px 10px;
+  }
+
+  .container-information div {
+    width: 100%;
+  }
+  .separador {
+    width: 200px;
+    height: auto;
+  }
+  .image-dic {
+    display: none;
+  }
+  .image-dic-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .container-queHacer {
+    margin-bottom: 1px;
+  }
+  .container-llamanos .fa-circle-chevron-down {
+    bottom: 33%;
+    right: 7%;
+  }
+  .contact_number {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 330px) {
+  .container-llamanos .fa-circle-chevron-down {
+    bottom: 33%;
+    right: 7%;
+  }
+}
+
+    </style>
+
+    
+
+
+    <link rel="stylesheet" href="libraries/fontawesome-free-5.14.0-web/css/all.min.css">
     <script src="https://kit.fontawesome.com/01c6550949.js" crossorigin="anonymous"></script>
-    <script src="/error/libraries/JQuery/jquery-3.5.1.min.js"></script>
+    <script src="libraries/JQuery/jquery-3.5.1.min.js"></script>
   </head>
   <body>
     <section class="container">
       <header class="container-header">
-        <a href="https://www.novaventa.com.co/" target="_blank"></a>
+        <a href="https://www.novaventa.com.co/" target="_blank">
         <img
           id="logo-imagen-i"
           class="logo-imagen-i"
-          src="/error/assets/logo-novaventa.svg"
+          src="/error/logo-novaventa.svg"
           alt="logo novaventa i"
         />
+        </a>
       </header>
 
       <img
         id="image-dic"
         class="image-dic"
-        src="/error/assets/cabezote-ppal-diciembre.png"
+        src="/error/cabezote-ppal-diciembre.png"
         alt="imagen diciembre"
       />
 
       <img
         id="image-dic"
         class="image-dic-mobile"
-        src="/error/assets/cabeza-mobile.png"
+        src="/error/cabeza-mobile.png"
         alt="imagen diciembre mobile"
       />
 
       <div class="fecha-dic bg-grey">
-        <img id="fecha-dic" src="/error/assets/Grupo 6666.png" alt="fecha dic" />
+        <img id="fecha-dic" src="/error/Grupo 6666.png" alt="fecha dic" />
         <p class="parrafo-uno">
           Tu <strong>OFICINA VIRTUAL</strong> está en mantenimiento desde
           *FECHA*.<br />
@@ -53,7 +590,7 @@
           <img
             loading="lazy"
             style="width: 100%; height: auto"
-            src="/error/assets/que-puedes-hacer-durante-la-actualizacion.png"
+            src="/error/que-puedes-hacer-durante-la-actualizacion.png"
           />
         </div>
 
@@ -70,7 +607,7 @@
               <img
                 id="icon-eva"
                 class="icon-eva"
-                src="/error/assets/icono-eva.svg"
+                src="/error/icono-eva.svg"
                 alt="icon eva"
               />
               <p class="p-eva">
@@ -85,12 +622,12 @@
               <img
                 id="icon-tiempo-entrega"
                 class="icon-tiempo-entrega"
-                src="/error/assets/icono-tiempo-entrega.svg"
+                src="/error/icono-tiempo-entrega.svg"
                 alt="icon tiempo entrega"
               />
               <p class="p-eva">
                 Durante este tiempo puedes realizar consultas generales en la
-                <strong>línea de servicio al cliente Novavent</strong>a de tu
+                <strong>línea de servicio al cliente Novaventa</strong> de tu
                 ciudad como: el reporte de devoluciones, estado de tu pedido y
                 fecha de entrega. Recuerda escuchar muy bien el menú de audio
                 para elegir la opcion correcta.
@@ -101,7 +638,7 @@
               <img
                 id="icon-realizar-pagos"
                 class="icon-realizar-pagos"
-                src="/error/assets/icono-realizar-pagos.svg"
+                src="/error/icono-realizar-pagos.svg"
                 alt="icon realizar pagos"
               />
               <p class="p-eva">
@@ -111,7 +648,7 @@
               </p>
             </div>
 
-             <div>
+            <div>
               <a style="text-decoration: none;cursor: pointer;" href="https://www.zonapagos.com/t_novaventatesoreria/pagos.asp" target="_blank" >
               <button class="boton-pagar-factura">Paga tu factura</button>
               </a>
@@ -131,7 +668,7 @@
           <img
             id="separador"
             class="separador"
-            src="/error/assets/separador.svg"
+            src="/error/separador.svg"
             alt="separador"
           />
         </div>
@@ -139,7 +676,7 @@
           <div style="margin: 20px 0px">
             <img
               style="width: 100%; height: auto"
-              src="/error/assets/que-no-puedes-hacer.png"
+              src="/error/que-no-puedes-hacer.png"
             />
           </div>
           <div class="container-cards">
@@ -147,12 +684,12 @@
               <img
                 id="icon-2-pc"
                 class="icon-2-pc"
-                src="/error/assets/icono2.svg"
+                src="/error/icono2.svg"
                 alt="icon 2 pc"
               />
               <p class="que-no">
-                No puedes ingresar a tu OFICINA VIRTUAL ni realizar pedidos a
-                través de ella.
+                <strong>No puedes ingresar a tu OFICINA VIRTUAL ni realizar pedidos a
+                través de ella.</strong>
               </p>
             </div>
 
@@ -160,11 +697,11 @@
               <img
                 id="icon-3-asteriscos"
                 class="icon-3-asteriscos"
-                src="/error/assets/icono3.png"
+                src="/error/icono3.png"
                 alt="icon3 asteriscos"
               />
               <p class="que-no">
-                No puedes activar o restablecer tu contraseña.
+                <strong> No puedes activar o restablecer tu contraseña. </strong>
               </p>
             </div>
 
@@ -172,12 +709,12 @@
               <img
                 id="icon-1-box"
                 class="icon-1-box"
-                src="/error/assets/icono1.svg"
+                src="/error/icono1.svg"
                 alt="icon 1 box"
               />
               <p class="que-no">
-                No puedes realizar ni gestionar devoluciones de tus productos en
-                tu OFICINA VIRTUAL.
+                <strong>No puedes realizar ni gestionar devoluciones de tus productos en
+                tu OFICINA VIRTUAL.</strong>
               </p>
             </div>
           </div>
@@ -194,7 +731,7 @@
       <div class="tu-tienda-virtual">
         <img
           id="tu-tienda-virtual"
-          src="/error/assets/Grupo 6590.svg"
+          src="/error/Grupo 6590.svg"
           alt="tu tienda virutal"
         />
       </div>
@@ -203,13 +740,13 @@
             <img
             class="haz-pedido-desktop"
               style="width: 100%; height: auto" 
-              src="/error/assets/Haz-pedidos.png"
+              src="/error/Haz-pedidos.png"
               />
 
                <img
                class="haz-pedido-mobile"
               style="width: 100%; height: auto" 
-              src="/error/assets/Haz-pedidos-mobile.png"
+              src="/error/Haz-pedidos-mobile.png"
               />
         </div>
         </h2>
@@ -219,7 +756,7 @@
           <img
             id="icon-azul-linea"
             class="icon-azul-linea"
-            src="/error/assets/Grupo 6603.svg"
+            src="/error/Grupo 6603.svg"
             alt="icon 6603 azul linea"
           />
         </div>
@@ -227,7 +764,7 @@
         <img
           id="icon-azul-linea"
           class="progress"
-          src="/error/assets/progress.png"
+          src="/error/progress.png"
           alt="icon 6603 azul linea"
         />
 
@@ -237,12 +774,11 @@
             cualquier momento del Ciclo para hacer un pedido.
             <strong>Conoce cómo hacerlo haciendo</strong>
             <a href=https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-autoconsumo-mantenimiento-ov-c182021/index.html" target="_blank">click aquí</a>
-            
           </p>
           <p class="parrafo-sexto">
             Con tu Tienda Virtual ganas Dinero y Puntos a través de los Bonos de
             Ganancias.<strong> Conoce cómo ganas haciendo</strong>
-              <a href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-ganancia-mantenimiento-ov-c182021/index.html" target="_blank">click aquí</a>
+            <a href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-ganancia-mantenimiento-ov-c182021/index.html" target="_blank">click aquí</a>
           </p>
         </div>
       </div>
@@ -252,15 +788,15 @@
           <img
             id="icon-carrito"
             class="icon-carrito"
-            src="/error/assets/Grupo 6597.svg"
+            src="/error/Grupo 6597.svg"
             alt="icon 6597 carrito"
           />
           Comprar en mi Tienda Virtual
         </button>
         </a>
       </div>
-      <div class="fecha-dic" style="margin-top: 10px">
-        <p class="parrafo-septimo">
+      <div class="fecha-dic" style="margin-top: 10px;text-align: center;">
+        <p style="font-style: italic;" class="parrafo-septimo">
           Ingresa con tu mismo usuario y contraseña de tu
           <a href="#" target="_blank">OFICINA VIRTUAL</a>
         </p>
@@ -270,27 +806,27 @@
             <img
             class="aun-no-haz-desktop"
               style="width: 100%; height: auto" 
-              src="/error/assets/aun-no-haz.png"
+              src="/error/aun-no-haz.png"
               />
 
                <img
                class="aun-no-haz-mobile"
               style="width: 100%; height: auto" 
-              src="/error/assets/aun-no-haz-mobile.png"
+              src="/error/aun-no-haz-mobile.png"
               />
         </div>
-        <p class="parramo-octavo">
+        <p class="parramo-octavo" style="text-align: center;">
           Activa en segundos tu Tienda Virtual y compártela con todos tus
           clientes para crecer más con tu negocio
         </p>
       </div>
       <div class="boton-tienda-virtual">
-         <a style="text-decoration: none;cursor: pointer;" href="https://tiendavirtual.novaventa.com.co/Oficinavirtual/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118" target="_blank" >
+        <a style="text-decoration: none;cursor: pointer;" href="https://tiendavirtual.novaventa.com.co/Oficinavirtual/#/?utm_source=pagina-web&utm_medium=pagina-web&utm_campaign=landing-mantenimiento-ov-c182021-2021-12-15&utm_content=html-landing-mantenimiento-ov-c182021&utm_term=202118" target="_blank" >
         <button class="boton-activar-tienda">
           <img
             id="icon-power"
             class="icon-power"
-            src="/error/assets/Icon material-power-settings-new.svg"
+            src="/error/Icon material-power-settings-new.svg"
             alt="icon power"
           />
           Quiero activar mi Tienda Virtual
@@ -303,49 +839,48 @@
             <img
             class="aun-no-haz-desktop"
               style="width: 100%; height: auto" 
-              src="/error/assets/llamanos.png"
+              src="/error/llamanos.png"
               />
 
                <img
                class="aun-no-haz-mobile"
               style="width: 100%; height: auto" 
-              src="/error/assets/llamanos-mobile.png"
+              src="/error/llamanos-mobile.png"
               />
         </div>
         <p class="parramo-octavo">
-          Te puedes comunicar con nosotros a nuestras líneas de atención de tu 
-          celular o a la línea nacional gratuita.
+          Te puedes comunicar con nosotros a nuestras líneas de atención de tu celular o a la línea nacional gratuita.
         </p>
       </div>
       <div class="ciudad">
         <div>
- <label for="inputState"><strong>Elige tu ciudad: </strong></label>
+ <label style="margin-bottom: 5px;" for="inputState"><strong>Elige tu ciudad: </strong></label>
  <select id="inputState" class="form-control">
- <option value="(4) 283 60 15">Medellín</option>
- <option selected="" value="(1) 485 00 22">Bogotá</option>
- <option value="(2) 380 00 88">Cali</option>
- <option value="(5) 319 30 90">Barranquilla</option>
- <option value="(5) 439 79 09">Santa Marta</option>
- <option value="(5) 642 49 29">Cartagena</option>
- <option value="(6) 893 39 20">Manizales</option>
- <option value="(6) 731 49 70">Armenia</option>
- <option value="(7) 691 79 60">Bucaramanga</option>
- <option value="(8) 279 69 30">Ibagué</option>
- <option value="(7) 589 29 19">Cúcuta</option>
+ <option value="(604) 283 60 15">Medellín</option>
+ <option selected="" value="(601) 485 00 22">Bogotá</option>
+ <option value="(602) 380 00 88">Cali</option>
+ <option value="(605) 319 30 90">Barranquilla</option>
+ <option value="(605) 439 79 09">Santa Marta</option>
+ <option value="(605) 642 49 29">Cartagena</option>
+ <option value="(606) 893 39 20">Manizales</option>
+ <option value="(606) 731 49 70">Armenia</option>
+ <option value="(607) 691 79 60">Bucaramanga</option>
+ <option value="(608) 279 69 30">Ibagué</option>
+ <option value="(607) 589 29 19">Cúcuta</option>
  <option value="01 8000 51 51 01">Otras ciudades</option>
  </select>
  <i class="fa fa-circle-chevron-down"></i>
 
  <p class="contact_number">
  <i class="fa-solid fa-phone"></i>
- <span class="js-result-select" href="tel:03(5) 642 49 29">(5) 642 49 29</span>
+ <span class="js-result-select" href="tel:03(5) 642 49 29">(601) 485 00 22</span>
  </p>
 </div>
 <div>
   <p class="parramo-octavo">
    <label style="color: black;"> <strong>Horario de atención: </strong> </label>
     <hr style="margin: 10px 0px;color: gray;"/>
-         De lunes a viernes de 7:30 a.m a 10:00 p.m y sábados de 8:00 a.m a 6:00 a.m
+         De lunes a viernes de 7:30 a.m a 10:00 p.m y sábados de 8:00 a.m a 6:00 p.m
         </p>
 </div>
  </div>
@@ -355,24 +890,24 @@
         <img
           id="icon-manos"
           class="icon-manos"
-          src="/error/assets/icono-manos.svg"
+          src="/error/icono-manos.svg"
           alt="icon manos"
         />
         <p>
           Agrandecemos tu comprensión durante este tiempo de mantenimiento.<br />
           Te invitamos a <a href="https://portal-contenido-novaventa.uc.r.appspot.com/venta-directa/contactanos" target="_blank">contactanos</a> a través de
-          los medios que seguirán a tu disposiciín.
+          los medios que seguirán a tu disposición.
         </p>
       </section>
       <footer>
         <p>
           Copyright&#169; 2021 Novaventa S.A.S. Todos los derechos reservados.
         </p>
-         <a href="https://www.novaventa.com.co/" target="_blank">
+        <a href="https://www.novaventa.com.co/" target="_blank">
         <img
           id="logos-nova-nutresa"
           class="logos-nova-nutresa"
-          src="/error/assets/logos-nova-nutresa.svg"
+          src="/error/logos-nova-nutresa.svg"
           alt="logo nova nutresa"
         />
         </a>
