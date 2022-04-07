@@ -22,6 +22,11 @@ body {
     rgba(239, 238, 236, 1) 100%
   );
 }
+hr {
+  color: #c3c3c3c3;
+  background-color: #c3c3c3c3;
+  border: 1px solid #c3c3c3c3;
+}
 .bg-grey {
   background-color: #efeeec;
 }
@@ -96,6 +101,9 @@ body {
   margin: 10px 0 25px;
 }
 .tu-tienda-virtual {
+  position: relative;
+  top: -67px;
+  margin-bottom: -97px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +284,8 @@ body {
 .barra-azul {
   background: #1f96ab;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding-left: 16rem !important;
   align-items: center;
   color: white;
   font-weight: 500;
@@ -305,6 +314,11 @@ footer {
 footer p {
   font-weight: 500;
   color: #707070;
+}
+footer a img {
+  padding: 20px 2rem;
+  width: auto;
+  height: 30px;
 }
 .ilustracion-eva-up {
   display: none;
@@ -438,12 +452,14 @@ footer p {
   }
   footer {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-flow: wrap-reverse;
   }
-  footer img {
+  footer a img {
     width: 100%;
     height: auto;
-    margin: 20px 0px;
+    padding: 20px 0px;
   }
   .icon-azul-linea {
     display: none;
@@ -485,9 +501,17 @@ footer p {
     bottom: 28%;
     right: 7%;
   }
+  .barra-azul {
+    padding-left: 20px !important;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
+  .barra-azul {
+    padding-left: 20px !important;
+    justify-content: center;
+  }
   .progress {
     display: block;
     height: 250px;

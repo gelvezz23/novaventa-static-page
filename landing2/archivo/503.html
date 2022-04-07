@@ -11,14 +11,14 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
     <style>
-      @font-face {
+  @font-face {
   font-family: "ProximaNova";
   font-style: normal;
   font-weight: normal;
-  src: url("/error/fonts/ProximaNova.eot?") format("eot"),
-    url("/error/fonts/ProximaNova.woff") format("woff"),
-    url("/error/fonts/ProximaNova.ttf") format("truetype"),
-    url("/error/fonts/ProximaNova.svg#ProximaNova") format("svg");
+  src: url("./../fonts/ProximaNova.eot?") format("eot"),
+    url("./../fonts/ProximaNova.woff") format("woff"),
+    url("./../fonts/ProximaNova.ttf") format("truetype"),
+    url("./../fonts/ProximaNova.svg#ProximaNova") format("svg");
 }
 
 * {
@@ -34,6 +34,11 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(239, 238, 236, 1) 100%
   );
+}
+hr {
+  color: #c3c3c3c3;
+  background-color: #c3c3c3c3;
+  border: 1px solid #c3c3c3c3;
 }
 .bg-grey {
   background-color: #efeeec;
@@ -109,6 +114,9 @@ body {
   margin: 10px 0 25px;
 }
 .tu-tienda-virtual {
+  position: relative;
+  top: -67px;
+  margin-bottom: -97px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +297,8 @@ body {
 .barra-azul {
   background: #1f96ab;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding-left: 16rem !important;
   align-items: center;
   color: white;
   font-weight: 500;
@@ -318,6 +327,11 @@ footer {
 footer p {
   font-weight: 500;
   color: #707070;
+}
+footer a img {
+  padding: 20px 2rem;
+  width: auto;
+  height: 30px;
 }
 .ilustracion-eva-up {
   display: none;
@@ -451,12 +465,14 @@ footer p {
   }
   footer {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-flow: wrap-reverse;
   }
-  footer img {
+  footer a img {
     width: 100%;
     height: auto;
-    margin: 20px 0px;
+    padding: 20px 0px;
   }
   .icon-azul-linea {
     display: none;
@@ -498,9 +514,17 @@ footer p {
     bottom: 28%;
     right: 7%;
   }
+  .barra-azul {
+    padding-left: 20px !important;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
+  .barra-azul {
+    padding-left: 20px !important;
+    justify-content: center;
+  }
   .progress {
     display: block;
     height: 250px;
@@ -541,6 +565,7 @@ footer p {
     right: 7%;
   }
 }
+
 
     </style>
     
@@ -762,7 +787,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
             Puedes Autoconsumir a través de tu Tienda Virtual y aprovechar
             cualquier momento del Ciclo para hacer un pedido.
             <strong>Conoce cómo hacerlo haciendo</strong>
-            <a href=https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-autoconsumo-mantenimiento-ov-c182021/index.html" target="_blank">click aquí</a>
+            <a href="https://storage.googleapis.com/comunicaciones_comerciales/mailing-tienda-virtual/2021/m-e/diciembre/landing-autoconsumo-mantenimiento-ov-c182021/index.html" target="_blank">click aquí</a>
           </p>
           <p class="parrafo-sexto">
             Con tu Tienda Virtual ganas Dinero y Puntos a través de los Bonos de
@@ -876,7 +901,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
       </section>
       <footer>
         <p>
-          Copyright&#169; 2021 Novaventa S.A.S. Todos los derechos reservados.
+          <strong> Copyright </strong> &#169; <strong>2022 Novaventa S.A.S. </strong> Todos los derechos reservados.
         </p>
         <a href="https://www.novaventa.com.co/" target="_blank">
         <img
@@ -885,6 +910,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
           src="/error/logos-nova-nutresa.svg"
           alt="logo nova nutresa"
         />
+          <hr style="margin-bottom:20px ;" class="haz-pedido-mobile"/>
         </a>
       </footer>
     </section>
