@@ -9,22 +9,31 @@
       rel="stylesheet"
       href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/yde7nbx.css" />
-    <style>
-  @font-face {
+    <link rel="stylesheet" href="./css/estilos.css" />
+    
+   
+    <script src="https://kit.fontawesome.com/01c6550949.js" crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			  crossorigin="anonymous"></script>
+        <style>
+          @font-face {
   font-family: "ProximaNova";
   font-style: normal;
   font-weight: normal;
-  src: url("./../fonts/ProximaNova.eot?") format("eot"),
-    url("./../fonts/ProximaNova.woff") format("woff"),
-    url("./../fonts/ProximaNova.ttf") format("truetype"),
-    url("./../fonts/ProximaNova.svg#ProximaNova") format("svg");
+  src: url("/error/fonts/ProximaNova.eot?") format("eot"),
+    url("/error/fonts/ProximaNova.woff") format("woff"),
+    url("/error/fonts/ProximaNova.ttf") format("truetype"),
+    url("/error/fonts/ProximaNova.svg#ProximaNova") format("svg");
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "ProximaNova", "Roboto", sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 body {
   /*max-width: 805px;*/
@@ -55,7 +64,7 @@ hr {
   opacity: 1;
   position: relative;
   left: 0;
-  margin: 10px;
+  margin: 5px;
   background-color: white;
 }
 .image-dic {
@@ -78,7 +87,7 @@ hr {
 .parrafo-uno {
   margin: 10px;
   color: #707070;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
 }
 .parrafo-uno strong {
@@ -115,8 +124,8 @@ hr {
 }
 .tu-tienda-virtual {
   position: relative;
-  top: -67px;
-  margin-bottom: -97px;
+  top: -55px;
+  margin-bottom: -85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +198,7 @@ hr {
   text-align: center;
   font-weight: 500;
   color: #707070;
+  text-align: left;
 }
 .p-eva {
   font-weight: 500;
@@ -209,12 +219,14 @@ hr {
   margin-top: 20px;
 }
 .boton-tienda-virtual button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1f96ab;
   color: white;
   border: none;
   border-radius: 25px;
-  padding: 15px 40px;
-  display: flex;
+  padding: 15px 60px;
 }
 
 .boton-pagar-factura {
@@ -222,7 +234,7 @@ hr {
   color: white;
   border: none;
   border-radius: 25px;
-  padding: 15px 90px;
+  padding: 15px 100px;
   display: flex;
 }
 .icon-carrito {
@@ -250,31 +262,31 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 415px;
   align-items: center;
 }
 
 .container-information div div {
   display: flex;
   flex-direction: row;
-  padding: 10px 0px;
+  padding: 2px 0px;
 }
 .container-information div div img {
   padding: 0px 16px 0px 10px;
 }
 .ilustracion-eva {
-  width: 380px !important;
-  margin-top: 70px !important;
-  height: auto !important;
-  object-fit: cover !important;
-  padding: 10px !important;
+  width: 420px !important;
+  margin-left: 82px !important;
+  height: 440px !important;
+  /*object-fit: cover !important;*/
 }
 .container-queHacer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: -45px;
+  margin-bottom: -90px;
 }
 .container-cards {
   display: flex;
@@ -283,10 +295,10 @@ hr {
 }
 .card {
   text-align: center;
-  width: 200px;
+  width: 225px;
   height: 300px;
 
-  margin: 0px 45px;
+  margin: 0px 40px;
   justify-content: center;
 }
 
@@ -298,7 +310,7 @@ hr {
   background: #1f96ab;
   display: flex;
   justify-content: start;
-  padding-left: 16rem !important;
+  padding-left: 15rem !important;
   align-items: center;
   color: white;
   font-weight: 500;
@@ -321,11 +333,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 25px;
 }
 
 footer p {
   font-weight: 500;
+  font-size: 14px;
   color: #707070;
 }
 footer a img {
@@ -359,6 +372,7 @@ footer a img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .ciudad {
   display: flex;
@@ -403,7 +417,7 @@ footer a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .contact_number {
@@ -461,7 +475,7 @@ footer a img {
     height: auto;
   }
   .boton-pagar-factura {
-    padding: 15px 60px;
+    padding: 15px 100px;
   }
   footer {
     flex-direction: column;
@@ -566,14 +580,7 @@ footer a img {
   }
 }
 
-
-    </style>
-    
-    <script src="https://kit.fontawesome.com/01c6550949.js" crossorigin="anonymous"></script>
-    <script
-			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-			  crossorigin="anonymous"></script>
+        </style>
   </head>
   <body>
     <section class="container">
@@ -605,12 +612,13 @@ footer a img {
       <div class="fecha-dic bg-grey">
         <img id="fecha-dic" src="/error/alert.png" alt="fecha dic" />
         <p class="parrafo-uno">
-        En este momento estamos trabajando en tu <strong>OFICINA VIRTUAL</strong>, te recomendamos intentar<br/>
-ingresar más tarde o utilizar los siguientes medios alternativos para administrar tu negocio.  
+          En este momento estamos trabajando en tu <strong>OFICINA VIRTUAL</strong>, 
+          te recomendamos intentar <br/> ingresar más tarde o utilizar 
+          los siguientes medios alternativos para administrar tu negocio.
         </p>
-       <div style="margin: 20px 0px;text-align: center;">
+        <div style="margin: 20px 0px;text-align: center;">
           <h1 style="color:#214f84;font-weight: lighter;">
-            <span style="font-size: 38px; font-weight: bold;">¿Qué puedes hacer</span> <br/> 
+            <span style="font-size: 36px; font-weight: 900;font-family: 'Roboto';">¿Qué puedes hacer</span> <br/> 
             durante esta actualización?</h1>
          
         </div>
@@ -619,7 +627,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
           <img
             id="ilustracion-eva"
             class="ilustracion-eva-up"
-            src="/error/assets/ilustracion-eva.png"
+            src="/error/ilustracion-eva.png"
             alt="ilustracion eva"
           />
 
@@ -670,6 +678,13 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
             </div>
 
             <div>
+              <img
+              style="opacity: 0;"
+                id="icon-realizar-pagos"
+                class="icon-realizar-pagos haz-pedido-desktop"
+                src="/error/icono-realizar-pagos.svg"
+                alt="icon realizar pagos"
+              />
               <a style="text-decoration: none;cursor: pointer;" href="https://www.zonapagos.com/t_novaventatesoreria/pagos.asp" target="_blank" >
               <button class="boton-pagar-factura">Paga tu factura</button>
               </a>
@@ -679,7 +694,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
             <img
               id="ilustracion-eva"
               class="ilustracion-eva"
-              src="/error/assets/ilustracion-eva.png"
+              src="/error/ilustracion-eva.png"
               alt="ilustracion eva"
             />
           </div>
@@ -694,10 +709,11 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
           />
         </div>
         <section class="container-queHacer">
-         <div style="margin: 20px 0px;text-align: center;">
+        <div style="margin: 20px 0px;text-align: center;">
           <h1 style="color:#214f84;font-weight: lighter;">
-            <span style="font-size: 28px; font-weight: bold;">¿Qué no puedes hacer</span> <br/> 
-            durante esta actualización?</h1>
+            <span style="font-size: 36px; font-weight: 900; font-family: 'Roboto';">
+              ¿Qué no puedes hacer</span> <br/> 
+            <span style="font-size:23px">durante esta actualización?</span></h1>
          
         </div>
           <div class="container-cards">
@@ -709,7 +725,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
                 alt="icon 2 pc"
               />
               <p class="que-no">
-                <strong>No puedes ingresar a tu OFICINA VIRTUAL ni realizar pedidos a
+                <strong>No puedes ingresar a tu <br/> OFICINA VIRTUAL ni realizar <br/> pedidos a
                 través de ella.</strong>
               </p>
             </div>
@@ -722,7 +738,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
                 alt="icon3 asteriscos"
               />
               <p class="que-no">
-                <strong> No puedes activar o restablecer tu contraseña. </strong>
+                <strong> No puedes activar o <br/> restablecer tu <br/> contraseña. </strong>
               </p>
             </div>
 
@@ -734,7 +750,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
                 alt="icon 1 box"
               />
               <p class="que-no">
-                <strong>No puedes realizar ni gestionar devoluciones de tus productos en
+                <strong>No puedes realizar ni gestionar <br/> devoluciones de tus productos <br/> en
                 tu OFICINA VIRTUAL.</strong>
               </p>
             </div>
@@ -759,7 +775,10 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
       <div class="fecha-dic">
         <div style="margin: 20px 0px;text-align: center;">
           <h1 style="color:#214f84;font-weight: lighter;">
-          Haz pedidos a través de su <span style="font-size: 28px; font-weight: bold;">Tienda Virtual</span>
+          Haz pedidos a través de su 
+          <span style="font-size: 30px; font-weight: 900; font-family: 'Roboto';">
+            Tienda Virtual
+          </span>
           </h1>
          
         </div>
@@ -818,7 +837,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
       <div class="fecha-dic" style="margin-top: 30px">
         <div style="margin: 20px 0px;text-align: center;">
           <h1 style="color:#214f84;font-weight: lighter;">
-            ¿Aún no has activado tu <span style="font-size: 28px; font-weight: bold;">Tienda Virtual?</span> <br/> 
+            ¿Aún no has activado tu <span style="font-size: 30px; font-weight: 900; font-family: 'Roboto';">Tienda Virtual?</span> <br/> 
             </h1>
          
         </div>
@@ -841,10 +860,10 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
         </a>
       </div>
      <section class="container-llamanos">
-<div class="fecha-dic" style="margin-top: 30px">
+      <div class="fecha-dic" style="margin-top: 30px">
         <div style="margin: 20px 0px;text-align: center;">
           <h1 style="color:#214f84;font-weight: lighter;font-size: 22px;">
-            Llamanos a nuestras <span style="font-size: 28px; font-weight: bold;">líneas de atención</span> <br/> 
+            Llamanos a nuestras <span style="font-size: 30px; font-weight: bold; font-family: 'Roboto';">líneas de atención</span> <br/> 
             </h1>
          
         </div>
@@ -855,7 +874,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
       <div class="ciudad">
         <div>
  <label style="margin-bottom: 5px;" for="inputState"><strong>Elige tu ciudad: </strong></label>
- <select id="inputState" class="form-control">
+ <select id="inputState" class="form-control" style="background-color: white;">
  <option value="(604) 283 60 15">Medellín</option>
  <option selected="" value="(601) 485 00 22">Bogotá</option>
  <option value="(602) 380 00 88">Cali</option>
@@ -893,6 +912,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
           src="/error/icono-manos.svg"
           alt="icon manos"
         />
+        
         <p>
           Agrandecemos tu comprensión durante este tiempo de mantenimiento.<br />
           Te invitamos a <a href="https://portal-contenido-novaventa.uc.r.appspot.com/venta-directa/contactanos" target="_blank">contactarnos</a> a través de
@@ -901,7 +921,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
       </section>
       <footer>
         <p>
-          <strong> Copyright </strong> &#169; <strong>2022 Novaventa S.A.S. </strong> Todos los derechos reservados.
+         <strong> Copyright </strong> &#169; <strong>2022 Novaventa S.A.S. </strong> Todos los derechos reservados.
         </p>
         <a href="https://www.novaventa.com.co/" target="_blank">
         <img
@@ -910,7 +930,7 @@ ingresar más tarde o utilizar los siguientes medios alternativos para administr
           src="/error/logos-nova-nutresa.svg"
           alt="logo nova nutresa"
         />
-          <hr style="margin-bottom:20px ;" class="haz-pedido-mobile"/>
+        <hr style="margin-bottom:20px ;" class="haz-pedido-mobile"/>
         </a>
       </footer>
     </section>

@@ -11,7 +11,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "ProximaNova", "Roboto", sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 body {
   /*max-width: 805px;*/
@@ -42,7 +42,7 @@ hr {
   opacity: 1;
   position: relative;
   left: 0;
-  margin: 10px;
+  margin: 5px;
   background-color: white;
 }
 .image-dic {
@@ -65,7 +65,7 @@ hr {
 .parrafo-uno {
   margin: 10px;
   color: #707070;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
 }
 .parrafo-uno strong {
@@ -102,8 +102,8 @@ hr {
 }
 .tu-tienda-virtual {
   position: relative;
-  top: -67px;
-  margin-bottom: -97px;
+  top: -55px;
+  margin-bottom: -85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +176,7 @@ hr {
   text-align: center;
   font-weight: 500;
   color: #707070;
+  text-align: left;
 }
 .p-eva {
   font-weight: 500;
@@ -196,12 +197,14 @@ hr {
   margin-top: 20px;
 }
 .boton-tienda-virtual button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1f96ab;
   color: white;
   border: none;
   border-radius: 25px;
-  padding: 15px 40px;
-  display: flex;
+  padding: 15px 60px;
 }
 
 .boton-pagar-factura {
@@ -209,7 +212,7 @@ hr {
   color: white;
   border: none;
   border-radius: 25px;
-  padding: 15px 90px;
+  padding: 15px 100px;
   display: flex;
 }
 .icon-carrito {
@@ -237,31 +240,31 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 415px;
   align-items: center;
 }
 
 .container-information div div {
   display: flex;
   flex-direction: row;
-  padding: 10px 0px;
+  padding: 2px 0px;
 }
 .container-information div div img {
   padding: 0px 16px 0px 10px;
 }
 .ilustracion-eva {
-  width: 380px !important;
-  margin-top: 70px !important;
-  height: auto !important;
-  object-fit: cover !important;
-  padding: 10px !important;
+  width: 420px !important;
+  margin-left: 82px !important;
+  height: 440px !important;
+  /*object-fit: cover !important;*/
 }
 .container-queHacer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: -45px;
+  margin-bottom: -90px;
 }
 .container-cards {
   display: flex;
@@ -270,10 +273,10 @@ hr {
 }
 .card {
   text-align: center;
-  width: 200px;
+  width: 225px;
   height: 300px;
 
-  margin: 0px 45px;
+  margin: 0px 40px;
   justify-content: center;
 }
 
@@ -285,7 +288,7 @@ hr {
   background: #1f96ab;
   display: flex;
   justify-content: start;
-  padding-left: 16rem !important;
+  padding-left: 15rem !important;
   align-items: center;
   color: white;
   font-weight: 500;
@@ -308,11 +311,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 25px;
 }
 
 footer p {
   font-weight: 500;
+  font-size: 14px;
   color: #707070;
 }
 footer a img {
@@ -346,6 +350,7 @@ footer a img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .ciudad {
   display: flex;
@@ -390,7 +395,7 @@ footer a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .contact_number {
@@ -448,7 +453,7 @@ footer a img {
     height: auto;
   }
   .boton-pagar-factura {
-    padding: 15px 60px;
+    padding: 15px 100px;
   }
   footer {
     flex-direction: column;
